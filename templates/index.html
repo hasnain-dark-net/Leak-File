@@ -1,19 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>THIS LINK - Leak File Manager</title>
+  <title>THIS LINK - Leak File Manager | HasnainDarkNet</title>
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
   <div class="upload-container">
-    <h1>Upload File - HasnainDarkNet</h1>
-    <form action="/" method="post" enctype="multipart/form-data">
-      <input type="file" name="file" required>
-      <button type="submit">Upload</button>
+    <header class="header">
+      <h1>📂 Leak File Manager</h1>
+      <p class="subtitle">Upload Securely with <strong>HasnainDarkNet</strong></p>
+    </header>
+
+    <form class="upload-form" action="/" method="post" enctype="multipart/form-data">
+      <div class="file-box">
+        <label for="file-input" class="file-label">Choose your file</label>
+        <input type="file" id="file-input" name="file" required>
+      </div>
+      <button class="upload-btn" type="submit">🚀 Upload Now</button>
     </form>
+
     <p class="msg">{{ message }}</p>
   </div>
+
+  <footer class="footer">
+    <p>🔐 Powered by <strong>HasnainDarkNet</strong> | Stay Hidden, Stay Ahead</p>
+  </footer>
 </body>
 </html>

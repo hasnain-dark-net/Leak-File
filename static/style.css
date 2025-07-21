@@ -1,44 +1,118 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(145deg, #141e30, #243b55);
-  color: white;
-  text-align: center;
-  padding-top: 50px;
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0f0f0f;
+  color: #00ffe1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
 .upload-container {
-  background: #1f2a3a;
-  padding: 40px;
+  background-color: #1a1a1a;
+  padding: 40px 30px;
   border-radius: 15px;
-  width: 400px;
-  margin: auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading */
+.header h1 {
+  font-size: 28px;
+  color: #00ff88;
+  text-shadow: 0 0 8px #00ff88;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 30px;
+}
+
+/* Upload Form */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.file-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-label {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 input[type="file"] {
-  margin: 20px 0;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #00ffe1;
   padding: 10px;
-  background: white;
-  color: black;
   border-radius: 8px;
+  width: 100%;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #00c6ff;
+/* Button */
+.upload-btn {
+  background-color: #00ff88;
   border: none;
+  padding: 12px;
   border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
   cursor: pointer;
-  color: white;
-  font-weight: bold;
+  transition: 0.3s ease;
 }
 
-button:hover {
-  background-color: #0072ff;
+.upload-btn:hover {
+  background-color: #00cc66;
+  transform: scale(1.05);
 }
 
+/* Message */
 .msg {
-  margin-top: 15px;
-  font-weight: bold;
-  color: #4ff;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .upload-container {
+    padding: 30px 20px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .upload-btn {
+    font-size: 14px;
+  }
 }
